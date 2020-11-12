@@ -1,3 +1,3 @@
 # Egglis.github.io
 Website for Dev Page
-[Website]: http://egglis.github.io.
+[Website]: https://egglis.github.io/

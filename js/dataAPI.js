@@ -21,6 +21,7 @@ setupRaces = function(year, selector){
 }
 
 setupDrivers = function(year, track, selector, drivers){
+    console.log("Setting Up Drivers!")
     $.ajax({
         type: "GET",
         url: "database/" + year + "/" + track + "/Race/"+"R"+year+track.replace(/ /g, "")+"Result.csv",

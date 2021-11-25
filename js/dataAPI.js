@@ -21,13 +21,13 @@ setupRaces = function(year, selector){
 }
 
 setupDrivers = function(year, track, selector, drivers){
-    
     $.ajax({
         type: "GET",
         url: "database/" + year + "/" + track + "/Race/"+"R"+year+track.replace(/ /g, "")+"Result.csv",
         dataType: "text",
         async:false,
         success: function (data) {
+            console.log(data)
             var driverList = data.replace(/(\n)/g,"").split("\r");
             for(let i = 1; i < driverList.length-1; i++){
                 let driverInfo = driverList[i].split(",");

@@ -8,4 +8,4 @@ This can be done on windows in command prompt with http-server pacakge downloade
 
 project Directory:  http-server -c 8080
 
-[Website]: https://egglis.github.io/
+https://egglis.github.io/

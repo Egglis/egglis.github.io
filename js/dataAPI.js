@@ -30,7 +30,7 @@ setupDrivers = function(year, track, selector, drivers){
         async:false,
         success: function (data) {
             console.log(data);
-            var driverList = data.replace(/(\n)/g,"").split("\r");
+            var driverList = data.replace("","").split("\n");
             console.log(driverList);
             for(let i = 1; i < driverList.length-1; i++){
                 let driverInfo = driverList[i].split(",");

@@ -88,12 +88,12 @@ trackSelect.addEventListener("change",function(){
     reloadGraph(drivers, paths, nr_drivers, path.track);
 });
 
-/*
+
 driverSelect.addEventListener("change", function(){
     var path = getCurrentSelection(trackSelect, sessionSelect, driverSelect);
     reloadGraph(path);
 });
-*/
+
 
 function reset(){
     driverNr.set("Red Bull", 0)

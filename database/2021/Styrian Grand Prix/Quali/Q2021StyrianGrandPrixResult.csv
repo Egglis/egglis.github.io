@@ -1,0 +1,21 @@
+number,position,Driver_driverId,Driver_permanentNumber,Driver_code,Driver_url,Driver_givenName,Driver_familyName,Driver_dateOfBirth,Driver_nationality,Constructor_constructorId,Constructor_url,Constructor_name,Constructor_nationality,Q1,Q2,Q3
+33,1,max_verstappen,33,VER,http://en.wikipedia.org/wiki/Max_Verstappen,Max,Verstappen,1997-09-30,Dutch,red_bull,http://en.wikipedia.org/wiki/Red_Bull_Racing,Red Bull,Austrian,1:04.489,1:04.433,1:03.841
+77,2,bottas,77,BOT,http://en.wikipedia.org/wiki/Valtteri_Bottas,Valtteri,Bottas,1989-08-28,Finnish,mercedes,http://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One,Mercedes,German,1:04.537,1:04.443,1:04.035
+44,3,hamilton,44,HAM,http://en.wikipedia.org/wiki/Lewis_Hamilton,Lewis,Hamilton,1985-01-07,British,mercedes,http://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One,Mercedes,German,1:04.672,1:04.512,1:04.067
+4,4,norris,4,NOR,http://en.wikipedia.org/wiki/Lando_Norris,Lando,Norris,1999-11-13,British,mclaren,http://en.wikipedia.org/wiki/McLaren,McLaren,British,1:04.584,1:04.298,1:04.120
+11,5,perez,11,PER,http://en.wikipedia.org/wiki/Sergio_P%C3%A9rez,Sergio,Pérez,1990-01-26,Mexican,red_bull,http://en.wikipedia.org/wiki/Red_Bull_Racing,Red Bull,Austrian,1:04.638,1:04.197,1:04.168
+10,6,gasly,10,GAS,http://en.wikipedia.org/wiki/Pierre_Gasly,Pierre,Gasly,1996-02-07,French,alphatauri,http://en.wikipedia.org/wiki/Scuderia_AlphaTauri,AlphaTauri,Italian,1:04.765,1:04.429,1:04.236
+16,7,leclerc,16,LEC,http://en.wikipedia.org/wiki/Charles_Leclerc,Charles,Leclerc,1997-10-16,Monegasque,ferrari,http://en.wikipedia.org/wiki/Scuderia_Ferrari,Ferrari,Italian,1:04.745,1:04.646,1:04.472
+22,8,tsunoda,22,TSU,http://en.wikipedia.org/wiki/Yuki_Tsunoda,Yuki,Tsunoda,2000-05-11,Japanese,alphatauri,http://en.wikipedia.org/wiki/Scuderia_AlphaTauri,AlphaTauri,Italian,1:04.608,1:04.631,1:04.514
+14,9,alonso,14,ALO,http://en.wikipedia.org/wiki/Fernando_Alonso,Fernando,Alonso,1981-07-29,Spanish,alpine,http://en.wikipedia.org/wiki/Alpine_F1_Team,Alpine F1 Team,French,1:04.971,1:04.582,1:04.574
+18,10,stroll,18,STR,http://en.wikipedia.org/wiki/Lance_Stroll,Lance,Stroll,1998-10-29,Canadian,aston_martin,http://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One,Aston Martin,British,1:04.821,1:04.663,1:04.708
+63,11,russell,63,RUS,http://en.wikipedia.org/wiki/George_Russell_%28racing_driver%29,George,Russell,1998-02-15,British,williams,http://en.wikipedia.org/wiki/Williams_Grand_Prix_Engineering,Williams,British,1:05.033,1:04.671
+55,12,sainz,55,SAI,http://en.wikipedia.org/wiki/Carlos_Sainz_Jr.,Carlos,Sainz,1994-09-01,Spanish,ferrari,http://en.wikipedia.org/wiki/Scuderia_Ferrari,Ferrari,Italian,1:04.859,1:04.800
+3,13,ricciardo,3,RIC,http://en.wikipedia.org/wiki/Daniel_Ricciardo,Daniel,Ricciardo,1989-07-01,Australian,mclaren,http://en.wikipedia.org/wiki/McLaren,McLaren,British,1:05.142,1:04.808
+5,14,vettel,5,VET,http://en.wikipedia.org/wiki/Sebastian_Vettel,Sebastian,Vettel,1987-07-03,German,aston_martin,http://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One,Aston Martin,British,1:05.051,1:04.875
+99,15,giovinazzi,99,GIO,http://en.wikipedia.org/wiki/Antonio_Giovinazzi,Antonio,Giovinazzi,1993-12-14,Italian,alfa,http://en.wikipedia.org/wiki/Alfa_Romeo_in_Formula_One,Alfa Romeo,Swiss,1:05.092,1:04.913
+6,16,latifi,6,LAT,http://en.wikipedia.org/wiki/Nicholas_Latifi,Nicholas,Latifi,1995-06-29,Canadian,williams,http://en.wikipedia.org/wiki/Williams_Grand_Prix_Engineering,Williams,British,1:05.175
+31,17,ocon,31,OCO,http://en.wikipedia.org/wiki/Esteban_Ocon,Esteban,Ocon,1996-09-17,French,alpine,http://en.wikipedia.org/wiki/Alpine_F1_Team,Alpine F1 Team,French,1:05.217
+7,18,raikkonen,7,RAI,http://en.wikipedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen,Kimi,Räikkönen,1979-10-17,Finnish,alfa,http://en.wikipedia.org/wiki/Alfa_Romeo_in_Formula_One,Alfa Romeo,Swiss,1:05.429
+47,19,mick_schumacher,47,MSC,http://en.wikipedia.org/wiki/Mick_Schumacher,Mick,Schumacher,1999-03-22,German,haas,http://en.wikipedia.org/wiki/Haas_F1_Team,Haas F1 Team,American,1:06.041
+9,20,mazepin,9,MAZ,http://en.wikipedia.org/wiki/Nikita_Mazepin,Nikita,Mazepin,1999-03-02,Russian,haas,http://en.wikipedia.org/wiki/Haas_F1_Team,Haas F1 Team,American,1:06.192

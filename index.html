@@ -1,10 +1,45 @@
-
 <!DOCTYPE html>
-    <html>
-    <body>
-        <button id="play" onclick="javascript:link()"><img style="width: 100px;" src="https://i.pinimg.com/originals/71/42/62/714262829697e9749a4aa86b3c1f5538.png"></button>
-    <script> function link(){
-        window.location.href = "https://play.google.com/store/apps/developer?id=Bru";
-    }</script>
-    </body>
-</html>
+<html>
+<head>
+<title>F1 Api test</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+      svg {
+        position: absolute;
+      }
+      div {
+        position: absolute;
+      }
+      p {
+        position: fixed;
+        right: 0;
+        top: 0;
+        size: 25%;
+      }
+  </style>
+</head>
+  <body style="background-color:powderblue;">
+    <select name="track" id="track"></select>
+    <select name="driver" id="driver"></select>
+    <p><b>Attribute Bars:</b> Can be clicked and the track map will show that attribute for the selected driver<br>
+       <b>Timeline Rect:</b> Can be click to show current timestap where you click, can also use arrowkeys to jump one data point at a time <br>
+       <br>
+       Dots are colored based on the actual colors of the team, and first driver has black outline, meanwhile second driver has yellow outline
+      <br>
+      <b>Note:</b> Some tracks do not have a track outline and thus only the actual raceline will be rendered: With outline:<br>
+       Austrian, Bahrain, Belgian, British, Dutch, Italian, Russian, Styrian
+    </p>
+      <script src="js/dataAPI.js"></script>
+      <script src="js/Consts.js"></script>
+      <script src="js/classes/Driver.js"></script>
+      <script src="js/classes/RaceLine.js"></script>
+      <script src="js/classes/Track.js"></script>
+      <script src="js/classes/Timeline.js"></script>
+      <script src="js/classes/Attribute.js"></script>
+      <script src="js/classes/Legend.js"></script>
+      <script src="js/SupClasses.js"></script>
+      <script src="js/fig1.js"></script>
+      <script type="module" src="js/vis.js"></script>
+  </body>
+</html> 

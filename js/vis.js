@@ -46,8 +46,8 @@ let driverSelect = document.getElementById("driver");
 
 let year = "2021";
 
-setupRaces(year, trackSelect);
-setupDrivers("2021", "Bahrain Grand Prix", driverSelect, []);
+await setupRaces(year, trackSelect);
+await setupDrivers("2021", "Bahrain Grand Prix", driverSelect, []);
 
 function loadGraph(drivers, paths, nr_drivers, track){
     reset();

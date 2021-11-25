@@ -40,8 +40,7 @@ function fig1(files, paths){
 
         
         // Construct the racing line path for currently slected driver
-        racelines[0].drawLap(canvas);
-        drivers[selectedDriver].StrokeColor = "Red"
+        racelines[selectedDriver].drawLap(canvas);
 
         // Finally draw the driver dots
         for(let i = 0; i < drivers.length; i++){
@@ -55,13 +54,12 @@ function fig1(files, paths){
 
         timeline.setupScales(drivers[selectedDriver].Tel, drivers[selectedDriver].Laps, canvas)
 
-        let legend = new Legend(drivers[0]);
+        let legend = new Legend(drivers[selectedDriver], drivers);
         legend.constructLegend(canvas);
 
         
         
         function updateGraph(index, lap, newX){
-
             timeline.drawTimeline(canvas, newX, drivers[selectedDriver].Tel[index].Time)
             legend.updateLegend(canvas, index, currentLap)
             if(racelines[selectedDriver].CurrentLap != currentLap){
@@ -108,6 +106,21 @@ function fig1(files, paths){
             })
             .on("mouseup", () => timeline.Clicked = false)
             .on("mouseout", () => timeline.Clicked = false)
+
+        for(let i = 0; i < drivers.length; i++){
+            let driverName = drivers[i].DriverName;
+            canvas.select(".start"+driverName)
+                .on("click",function (e){
+                    drivers[selectedDriver].StrokeColor = "Black"
+                    selectedDriver = i;
+                    console.log(selectedDriver);
+                })
+            canvas.select(".end"+driverName)
+                .on("click",function (e){
+                    selectedDriver = i;
+                    console.log(selectedDriver);
+                })
+        }
 
 
         function keyPress(e){

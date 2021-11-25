@@ -43,6 +43,7 @@ function reloadGraph(drivers, paths, nr_drivers, track){
 
 let trackSelect = document.getElementById("track");
 let driverSelect = document.getElementById("driver");
+let nrdriverSelect = document.getElementById("nr_driver");
 
 let year = "2021";
 
@@ -83,7 +84,7 @@ trackSelect.addEventListener("change",function(){
     var path = getCurrentSelection(trackSelect, driverSelect);
     let drivers = [];
     let paths = [];
-    let nr_drivers = 5;
+    let nr_drivers = document.getElementById("nr_drivers").selectedIndex+1;
     setupDrivers(path.year, path.track, driverSelect, drivers);
     reloadGraph(drivers, paths, nr_drivers, path.track);
 });

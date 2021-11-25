@@ -121,16 +121,34 @@ class Timeline {
                     .attr("fill",d.Color)
                     .attr("stroke",d.StrokeColor)
             
-                if (i==1) {
+                if (i==0) {
+                    canvas.append("rect")
+                        .attr("class","end"+d.DriverName)
+                        .attr("x", this.Metrics.x-50)
+                        .attr("y",this.Metrics.y+stepY*j)
+                        .attr("height",(this.Metrics.height/this.Drivers.length))
+                        .attr("width", 50)
+                        .attr("fill",d.Color)
+                        .attr("stroke",d.StrokeColor)
+                        .attr("stroke-width",3)
                     canvas.append("text")
-                        .attr("x", this.Metrics.x-25)
+                        .attr("x", this.Metrics.x-40)
                         .attr("y", (this.Metrics.y+stepY*j)+(this.Metrics.height/this.Drivers.length)/2)
-                        .text(d.Num)
-                } else if(i==laptimes[i].length-1){
+                        .text(d.DriverName)
+                } else if(i>=laptimes.length-2){
+                    canvas.append("rect")
+                        .attr("class","start"+d.DriverName)
+                        .attr("x", this.Metrics.x+this.Metrics.width)
+                        .attr("y",this.Metrics.y+stepY*j)
+                        .attr("height",(this.Metrics.height/this.Drivers.length))
+                        .attr("width", 50)
+                        .attr("fill",this.Drivers[j].Color)
+                        .attr("stroke",this.Drivers[j].StrokeColor)
+                        .attr("stroke-width",3)
                     canvas.append("text")
-                        .attr("x", this.Metrics.x+this.Metrics.width+25)
+                        .attr("x", this.Metrics.x+this.Metrics.width+3)
                         .attr("y", (this.Metrics.y+stepY*j)+(this.Metrics.height/this.Drivers.length)/2)
-                        .text(this.Drivers[j].Num)
+                        .text(this.Drivers[j].DriverName)
                 }
             }
 
@@ -167,6 +185,9 @@ class Timeline {
         return null;
     }
 
+    updateTimeLine(selectedDriver){
+        
+    }
     
 
 }

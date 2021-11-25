@@ -84,26 +84,32 @@ class Attribute{
             .attr("font-size","22px")
             .style("text-decoration", "solid")
             .text("");
-        
-        canvas.append("rect")
-            .attr("class","bar_"+this.Name)
-            .attr("x",this.X)
-            .attr("y",this.Y)
-            .attr("width", this.Width)
-            .attr("height", 0)
-            .attr("fill","#00000055")
-            .attr("stroke","Black")
-            .attr("stroke-width",3)
     }
 
-    updateAtt(canvas, dot){
-        let newHeight = this.AttScale(Object.values(dot)[2+this.Index])
-        this.BarHeight = 500-newHeight;
-        canvas.select(this.BarClass)
-            .attr("y",500-newHeight)
-            .attr("height",newHeight);
-        canvas.select(this.ValueClass)
-            .text(Object.values(dot)[2+this.Index])
+    constructBar(canvas, drivers){
+        for(let i = 0; i < drivers.length; i++){
+            canvas.append("rect")
+                .attr("class","bar_"+this.Name+drivers[i].Num)
+                .attr("x",this.X)
+                .attr("y",this.Y)
+                .attr("width", this.Width)
+                .attr("height", 4)
+                .attr("fill",drivers[i].StrokeColor)
+                .attr("stroke",drivers[i].Color)
+                .attr("stroke-width",2)
+        }
+    }
 
+    updateAtt(canvas, driver, index){
+        let newHeight = this.AttScale(Object.values(driver.Dot[index])[2+this.Index])
+        this.BarHeight = 500-newHeight;
+        canvas.select(this.BarClass+driver.Num)
+            .attr("y",500-newHeight)
+            .attr("height",4);
+    }
+
+    updateValue(canvas, driver, index){
+        canvas.select(this.ValueClass)
+            .text(Object.values(driver.Dot[index])[2+this.Index])
     }
 }

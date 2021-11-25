@@ -20,6 +20,7 @@ class Driver {
         this.Color = TeamColorsMap.get(this.Laps[0].Team)
         this.StrokeColor = "Black"
         this.Index = 0;
+        this.DriverName = this.Laps[0].Driver;
 
         if (driverNr.get(this.Laps[0].Team) == 0){
             this.StrokeColor = "Black"
@@ -41,7 +42,7 @@ class Driver {
     }
 
     drawDot(canvas, index, currentLap){
-                // Do Update Stuff!
+        // Do Update Stuff!
         this.Index = index;
         if(currentLap >= this.TelLaps.length){
             canvas.select(this.DotClass)

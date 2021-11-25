@@ -76,6 +76,7 @@ class Raceline {
             case "RPM": t = ((parseInt(d[1].RPM) + parseInt(d[0].RPM)) / 2) / (this.Driver.MinMax.rpm[1]); break;
             case "Speed": t = ((parseInt(d[1].Speed) + parseInt(d[0].Speed)) / 2) / (this.Driver.MinMax.speed[1]); break;
             case "Gear": t = (parseInt(d[0].nGear)) / (this.Driver.MinMax.gear[1]); break;
+            case "DRS": t = (parseInt(d[0].DRS)) / (this.Driver.MinMax.DRS[1]); break;
         }
         return lerpColor(start, end, t);
     }

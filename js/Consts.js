@@ -51,7 +51,7 @@ const ticks = [
   10,
   13,
   16,
-  8
+  8,
 ]
 
 function lerpColor(a, b, amount) { 

@@ -4,4 +4,8 @@ Currently only some of the tracks have track outlines, and some of the track dat
 
 If website is not working hosting a localhost server is required for the visuazlisation to work.
 
-[Website]: https://egglis.github.io/
+This can be done on windows in command prompt with http-server pacakge downloaded or any other way you prefer.
+
+project Directory:  http-server -c 8080
+
+https://egglis.github.io/

@@ -31,6 +31,7 @@ setupDrivers = function(year, track, selector, drivers){
         success: function (data) {
             console.log(data);
             var driverList = data.replace(/(\n)/g,"").split("\r");
+            console.log(driverList);
             for(let i = 1; i < driverList.length-1; i++){
                 let driverInfo = driverList[i].split(",");
                 let driverFirstName = driverInfo[8];
@@ -41,7 +42,7 @@ setupDrivers = function(year, track, selector, drivers){
                 let option = document.createElement("option");
                 option.text = driverNr + " - "+ driverFirstName + " " + driverLastName;
                 option.value = driverNr;
-                console.log(option.value)
+                console.log(option)
 
                 selector.appendChild(option);
             }

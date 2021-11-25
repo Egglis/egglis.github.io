@@ -33,12 +33,10 @@ setupDrivers = function(year, track, selector, drivers){
                 let driverFirstName = driverInfo[8];
                 let driverLastName = driverInfo[9];
                 let driverNr = driverInfo[5];
-                console.log(driverNr);
                 drivers.push(driverNr);
                 let option = document.createElement("option");
                 option.text = driverNr + " - "+ driverFirstName + " " + driverLastName;
                 option.value = driverNr;
-                console.log(option.value);
                 selector.appendChild(option);
             }
         }

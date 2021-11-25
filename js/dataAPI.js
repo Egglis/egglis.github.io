@@ -42,6 +42,9 @@ setupDrivers = function(year, track, selector, drivers){
 
                 selector.appendChild(option);
             }
+        },
+        error: function (err){
+            console.log(err);
         }
         
     })

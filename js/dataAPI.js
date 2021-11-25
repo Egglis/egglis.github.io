@@ -5,7 +5,7 @@ var mainPath = "database"
 setupRaces = function(year, selector){
     $.ajax({
         type: "GET",
-        url: "database/" + year + "/info.txt",
+        url: "/database/" + year + "/info.txt",
         dataType: "text",
         success: function (data) {
             var trackList = data.replace(/(\n)/g,"").split(", ");
@@ -22,12 +22,14 @@ setupRaces = function(year, selector){
 
 setupDrivers = function(year, track, selector, drivers){
     console.log("Setting Up Drivers!")
+    console.log("/database/" + year + "/" + track + "/Race/"+"R"+year+track.replace(/ /g, "")+"Result.csv")
     $.ajax({
         type: "GET",
-        url: "database/" + year + "/" + track + "/Race/"+"R"+year+track.replace(/ /g, "")+"Result.csv",
+        url: "/database/" + year + "/" + track + "/Race/"+"R"+year+track.replace(/ /g, "")+"Result.csv",
         dataType: "text",
         async:false,
         success: function (data) {
+            console.log(data);
             var driverList = data.replace(/(\n)/g,"").split("\r");
             for(let i = 1; i < driverList.length-1; i++){
                 let driverInfo = driverList[i].split(",");

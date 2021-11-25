@@ -22,28 +22,22 @@ setupRaces = function(year, selector){
 
 setupDrivers = function(year, track, selector, drivers){
     console.log("Setting Up Drivers!")
-    console.log("/database/" + year + "/" + track + "/Race/"+"R"+year+track.replace(/ /g, "")+"Result.csv")
     $.ajax({
         type: "GET",
         url: "/database/" + year + "/" + track + "/Race/"+"R"+year+track.replace(/ /g, "")+"Result.csv",
         dataType: "text",
         async:false,
         success: function (data) {
-            console.log(data);
             var driverList = data.replace("","").split("\n");
-            console.log(driverList);
             for(let i = 1; i < driverList.length-1; i++){
                 let driverInfo = driverList[i].split(",");
                 let driverFirstName = driverInfo[8];
                 let driverLastName = driverInfo[9];
                 let driverNr = driverInfo[5];
-                console.log(driverNr)
                 drivers.push(driverNr);
                 let option = document.createElement("option");
                 option.text = driverNr + " - "+ driverFirstName + " " + driverLastName;
                 option.value = driverNr;
-                console.log(option)
-
                 selector.appendChild(option);
             }
         },

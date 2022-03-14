@@ -1,5 +1,5 @@
 # Egil Bru
 Master Student in data visualization at University og Bergen.
 
-## Google Play Store link for my apps
+## My published apps on google play store
 https://play.google.com/store/search?q=pub%3ABru&c=apps&gl=NO
